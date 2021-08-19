@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AssignmentDataSet5" targetNamespace="http://tempuri.org/AssignmentDataSet5.xsd" xmlns:mstns="http://tempuri.org/AssignmentDataSet5.xsd" xmlns="http://tempuri.org/AssignmentDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AssignmentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AssignmentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Assignment2Desktop.Properties.Settings.GlobalReference.Default.AssignmentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PROGRAMMETableAdapter" GeneratorDataComponentClassName="PROGRAMMETableAdapter" Name="PROGRAMME" UserDataComponentName="PROGRAMMETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AssignmentConnectionString (Settings)" DbObjectName="Assignment.dbo.PROGRAMME" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProgrammeName FROM dbo.PROGRAMME</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProgrammeName" DataSetColumn="ProgrammeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AssignmentDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AssignmentDataSet5" msprop:Generator_UserDSName="AssignmentDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PROGRAMME" msprop:Generator_TableClassName="PROGRAMMEDataTable" msprop:Generator_TableVarName="tablePROGRAMME" msprop:Generator_TablePropName="PROGRAMME" msprop:Generator_RowDeletingName="PROGRAMMERowDeleting" msprop:Generator_RowChangingName="PROGRAMMERowChanging" msprop:Generator_RowEvHandlerName="PROGRAMMERowChangeEventHandler" msprop:Generator_RowDeletedName="PROGRAMMERowDeleted" msprop:Generator_UserTableName="PROGRAMME" msprop:Generator_RowChangedName="PROGRAMMERowChanged" msprop:Generator_RowEvArgName="PROGRAMMERowChangeEvent" msprop:Generator_RowClassName="PROGRAMMERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProgrammeName" msprop:Generator_ColumnVarNameInTable="columnProgrammeName" msprop:Generator_ColumnPropNameInRow="ProgrammeName" msprop:Generator_ColumnPropNameInTable="ProgrammeNameColumn" msprop:Generator_UserColumnName="ProgrammeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

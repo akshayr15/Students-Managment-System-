@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AssignmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AssignmentEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ReportProgramme" ReturnType="Collection(AssignmentModel.ReportProgramme_Result)">
+      <Parameter Name="QueryProgrammeName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="ReportProgramme_Result">
+    <Property Type="String" Name="ProgrammeName" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="CourseId" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="CourseName" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="StudentId" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Grade" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="StudentName" Nullable="false" MaxLength="20" />
+  </ComplexType>
+</Schema>
